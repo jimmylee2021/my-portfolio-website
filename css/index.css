@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #FFFFFF;
+    font-size: 62.5%;
+    height: 200vh;
+}
+
+header {
+    display: flex;
+    top: 0;left: 0;right: 0;
+    padding: 20px 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 10000;
+}
+
+header .logo {
+    font-family: Messapia;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #31525B;
+}
+header.sticky{
+    padding:15px 15px;
+    background: #FFFFFF;
+    position: fixed;
+   
+  }
+
+  header .active{
+	position: fixed;
+	top:0;left:0;right:0;
+
+}
+
+
+header .nav li {
+    display: inline-block;
+    margin: 20px 20px;
+    padding: 20px;
+}
+
+header .nav li a {
+    font-family: GT Walsheim Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000;
+  
+
+}
+.logo {
+    margin-left: 50px;
+}
+
+header .nav li a:hover {
+    border-top: #FFA101 5px solid;
+    width: 50px;
+
+}
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+
+
+.hero-txt {
+    font-family: 'Messapia';
+font-style: normal;
+font-weight: 700;
+font-size: 72px;
+line-height: 86px;
+margin-top: 80px;
+color: #31525B;
+}
+.small-txt {
+    font-family: 'GT Walsheim Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 60px;
+/* or 167% */
+
+letter-spacing: 0.045em;
+
+color: #000000;
+}
+
+.btn {
+    padding: 25px 30px;
+    display: inline-block;
+    background: #FFA101;
+    color: #31525B;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Messapia';
+    border-radius: 15px;
+    gap: 10px;
+}
+
+.row-2 {
+    background: url(../img/halo.png);
+    background-repeat: no-repeat;
+    margin-left: 250px;
+    background-size: contain;
+}
+
+.row-2 img {
+    margin-top: 50px;
+}
+
+
+
+#menu-bar{
+	font-size: 2rem;
+	border-radius: .5rem;
+	border:.1rem  solid var(--black);
+	padding:.8rem 1.5rem;
+	color:var(--black);
+	cursor:pointer;
+	display: none;
+}
+
+@media (max-width:1300px) {
+
+    .hero-txt {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .small-txt {
+        font-size: 25px;
+        line-height: 40px;
+    }
+    .row-2 {
+        margin-left: 140px;
+    }
+    .btn {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width:1024px) {
+    #menu-bar{
+		display: initial;
+   }
+
+   header {
+       position: fixed;
+   }
+
+   header .nav{
+   	    position: absolute;
+		top:100%; left:0; right:0;
+		background:white;
+		box-shadow: .0.5rem 1rem rgba(0,0,0,.1);
+		padding: 1rem 0;
+        display: none;
+	}
+	header .nav.active{
+		display: block;
+	}	
+	header .nav li{
+		font-size: 2.5rem;
+		display: block;
+		justify-content: left;
+		padding: 20px 20px;
+		color:#fff;
+		text-align: center;
+	}
+	header .nav li a{
+		color:#000;
+	}
+    
+    .banner {
+        margin-top: 5vh;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-left: 80px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .row-2 {
+        margin-top: 50px;
+        max-width: 90%;
+        margin-left: 50px;
+    }
+    .row-2 img {
+        max-width: 90%;
+    }
+    .btn {
+        margin-top: 20px;
+    }
+   
+}
+
+@media (max-width:600px) {
+    .banner {
+        margin-left: 20px;
+    }
+    .hero-txt {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .small-txt {
+        margin-top: 10px;
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .btn {
+        margin-top: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .row-2 {
+        max-width: 80%;
+        background-size: contain;
+        margin-left: 20px;
+        margin-top: 50px;
+        justify-content: center;
+        
+    }
+    .row-2 img {
+        max-width: 90%;
+
+    }
+}
+
+@media (max-width:400px) {
+    .row-2 {
+        margin-left: 10px;
+    }
+}
+
+
+
+
+
+
+
+
