@@ -110,7 +110,8 @@ color: #000000;
     background: #FFA101;
     color: #31525B;
     font-size: 30px;
-    font-weight: bold;
+    font-weight: 700;
+    font-style: normal;
     font-family: 'Messapia';
     border-radius: 15px;
     gap: 10px;
@@ -125,6 +126,24 @@ color: #000000;
 
 .row-2 img {
     margin-top: 50px;
+}
+
+.works {
+    flex-wrap: wrap;
+}
+.box {
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+}
+
+.box-container {
+    width: 543px;
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 385px;
+    background: #31525B;
 }
 
 
