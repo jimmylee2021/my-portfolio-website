@@ -109,12 +109,18 @@ color: #000000;
     display: inline-block;
     background: #FFA101;
     color: #31525B;
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 700;
     font-style: normal;
     font-family: 'Messapia';
     border-radius: 15px;
     gap: 10px;
+}
+
+.heading {
+    font-size: 50px;
+    margin-left: 10px;
+    font-family: 'Messapia';
 }
 
 .row-2 {
@@ -131,20 +137,68 @@ color: #000000;
 .works {
     flex-wrap: wrap;
 }
+
 .box {
     display: flex;
-   
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-
-.box-container {
-    width: 543px;
-    margin-top: 20px;
-    margin-left: 20px;
-    height: 385px;
-    background: #31525B;
+.box-txt {
+    margin-left: 50px;
 }
+.box-txt h3 {
+    font-family: 'Messapia';
+font-style: normal;
+margin-top: 20px;
+font-weight: 900;
+font-size: 40px;
+line-height: 48px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+color: #31525B;
+text-transform: capitalize;
+}
+
+.box-txt h4 {
+    font-family: 'GT Walsheim Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 37px;
+/* identical to box height */
+display: flex;
+align-items: center;
+color: #000000;
+}
+.box-txt .button {
+   display: inline-block;
+   padding: 16px 34px;
+   background: #FFA101;
+   border-radius: 10px;
+   color:#fff;
+   margin-top: 20px;
+   text-transform: uppercase;
+   font-family: 'Messapia';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 36px;
+   gap: 20px;
+}
+
+.container {
+   display: flex;
+   width: 543px;
+   margin: 50px 50px;
+   height: 385px;
+   background: #31525B;
+}
+
+
+
 
 
 
@@ -173,6 +227,22 @@ color: #000000;
     }
     .btn {
         font-size: 20px;
+    }
+    .container {
+        height: 285px;
+        width: 400px;
+        margin: 50px 50px;
+    }
+    .box-txt {
+        margin-left: 50px;
+    }
+    .box-txt h3, h4 {
+        font-size: 30px;
+    }
+    .box-txt .button {
+        font-size: 20px;
+        font-weight: 200;
+
     }
 }
 
@@ -218,7 +288,7 @@ color: #000000;
         margin-top: 5vh;
         display: flex;
         flex-direction: column-reverse;
-        margin-left: 80px;
+        margin-left: 100px;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -267,9 +337,14 @@ color: #000000;
         max-width: 90%;
 
     }
+    .container {
+        width: 300px;
+        height: 200px;
+        margin: 50px 50px;
+    }
 }
 
-@media (max-width:400px) {
+@media (max-width:512px) {
     .row-2 {
         margin-left: 10px;
     }
