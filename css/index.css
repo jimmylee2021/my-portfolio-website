@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: .2s all linear;
 }
 
 a {
@@ -28,12 +29,12 @@ header .logo {
     font-family: Messapia;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 44px;
     line-height: 29px;
     color: #31525B;
 }
 header.sticky{
-    padding:15px 15px;
+    padding:10px 10px;
     background: #FFFFFF;
     position: fixed;
    
@@ -53,7 +54,7 @@ header .nav li {
 }
 
 header .nav li a {
-    font-family: GT Walsheim Pro;
+    font-family: 'GT Walsheim Pro';
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -74,6 +75,7 @@ header .nav li a:hover {
 .banner {
     display: flex;
     flex-wrap: wrap;
+    animation: expand .8s ease forwards;
 }
 .row {
     display: flex;
@@ -98,6 +100,7 @@ font-weight: 400;
 font-size: 36px;
 line-height: 60px;
 /* or 167% */
+margin-top: 20px;
 
 letter-spacing: 0.045em;
 
@@ -110,7 +113,7 @@ color: #000000;
     background: #FFA101;
     color: #31525B;
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 400;
     font-style: normal;
     font-family: 'Messapia';
     border-radius: 15px;
@@ -118,8 +121,9 @@ color: #000000;
 }
 
 .heading {
-    font-size: 50px;
-    margin-left: 10px;
+    font-size: 40px;
+    margin-left: 50px;
+    color: #31525B;
     font-family: 'Messapia';
 }
 
@@ -128,6 +132,7 @@ color: #000000;
     background-repeat: no-repeat;
     margin-left: 250px;
     background-size: contain;
+    animation: slideIn 1.5s ease-in-out forwards;
 }
 
 .row-2 img {
@@ -148,7 +153,7 @@ color: #000000;
     margin-left: 50px;
 }
 .box-txt h3 {
-    font-family: 'Messapia';
+    font-family: 'Messapia ';
 font-style: normal;
 margin-top: 20px;
 font-weight: 900;
@@ -182,7 +187,7 @@ color: #000000;
    color:#fff;
    margin-top: 20px;
    text-transform: uppercase;
-   font-family: 'Messapia';
+   font-family: 'Messapia ';
    font-style: normal;
    font-weight: 400;
    font-size: 36px;
@@ -196,6 +201,186 @@ color: #000000;
    height: 385px;
    background: #31525B;
 }
+.see-more-txt {
+    margin-top: 50px;
+    margin-left: 180px;
+}
+.see-more-txt a {
+    text-decoration: underline;
+    color: #31525B;
+    font-size: 30px;
+    font-family: 'Messapia';
+    font-weight: 700;
+}
+.about {
+    background: #31525B;
+    flex-wrap: wrap;
+}
+.abt-container {
+    margin-top: 100px;
+    margin-left: 10px;
+}
+.abt-container .heading{
+    color:  #B3DEE5;
+    margin-top:100px ;
+}
+.col {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-1-txt {
+    margin-top: 50px;
+    margin-left: 50px;
+    font-family: 'Messapia';
+font-style: normal;
+font-weight: 700;
+font-size: 72px;
+line-height: 86px;
+
+color: #FFA101;
+}
+.content-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 770px;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+.col-1-txt-2 {
+    font-family: 'GT Walsheim Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 141%;
+/* or 42px */
+
+letter-spacing: 0.045em;
+
+color: #FFFFFF;
+}
+
+.col-1-btn {
+    display: inline-block;
+    font-size: 30px;
+    font-family: 'Messapia bold';
+    font-size: 800;
+    padding: 26px 94px;
+    background: #FFA101;
+    color: #31525B;
+    border-radius: 15px;
+    gap: 10px;
+    margin-top: 50px;
+}
+.col-2-img {
+    margin-left: 150px;
+    flex-basis: 20%;
+    background: url(../img/Group\ 1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   position: relative;
+}
+.img-bx {
+    margin-top: 66vh;
+}
+.img-bx img {
+}
+.mobile{
+    display: none;
+}
+.footer{
+    flex-wrap: wrap;
+}
+.footer-bx{
+   display: flex;
+}
+.f1 img {
+    margin-top: -200px;
+    max-width: 100%;
+    object-fit: cover;
+}
+.f2 {
+    margin-top: 70px;
+    margin-left: 150px;
+}
+.f2-text{
+    font-family: 'Messapia';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    display: flex;
+    align-items: center;
+    color: #31525B;
+    
+}
+.contact {
+    margin-top: 20px;
+    line-height: 40px;
+    font-family: 'GT Walsheim Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+
+letter-spacing: 0.045em;
+
+
+}
+.mail {
+    text-decoration: none;
+    color: #000000;
+}
+.f3 {
+    margin-top: 50px;
+}
+.contact-lnks {
+    margin-top: 20px;
+}
+.contact-lnks li {
+    list-style: none; 
+}
+.contact-lnks a {
+    font-family: 'GT Walsheim Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 141%;
+/* or 42px */
+
+letter-spacing: 0.045em;
+
+color: #000000;
+list-style: none;
+text-decoration: none;
+}
+.f3-text{
+font-family: 'Messapia';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 43px;
+display: flex;
+align-items: center;
+
+color: #31525B;
+}
+footer {
+    text-align: center;
+    font-family: 'GT Walsheim Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 141%;
+/* or 34px */
+
+letter-spacing: 0.045em;
+
+color: #000000;
+margin-left: 50px;
+}
+
+
 
 
 
@@ -211,6 +396,35 @@ color: #000000;
 	cursor:pointer;
 	display: none;
 }
+
+
+@keyframes slideIn {
+    0% {
+      transform: translateX(500px) scale(.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
+  
+  @keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  @keyframes expand {
+    0% {
+      transform: translateX(1400px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  
 
 @media (max-width:1300px) {
 
@@ -244,6 +458,51 @@ color: #000000;
         font-weight: 200;
 
     }
+    .col-2-img {
+        display: none;
+    }
+    .about {
+        height: 170vh;
+    }
+    
+    .f1 img {
+        margin-top: -200px;
+        max-width: 100%;
+        z-index: 3;
+        object-fit: cover;
+    }
+    
+   
+}
+
+
+@media (max-width:1143px) {
+    .banner {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-left: 250px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .row-2 {
+        margin-top: 30px;
+        max-width: 80%;
+        margin-left: 20px;
+    }
+    .row-2 img{
+        max-width: 80%;
+    }
+}
+.works {
+    margin-top: 50px;
+}
+.mobile {
+   display: none;
+}
+.col-1-txt-2 {
+    font-size: 30px;
 }
 
 
@@ -252,7 +511,8 @@ color: #000000;
 
 
 
-@media (max-width:1024px) {
+
+@media (max-width:800px) {
     #menu-bar{
 		display: initial;
    }
@@ -304,10 +564,35 @@ color: #000000;
     .btn {
         margin-top: 20px;
     }
+    .mobile {
+        display: none;
+    }
+    .col-1-txt-2 {
+        font-size: 20px;
+    }
+    .col-1-txt {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .about {
+        height: 100vh;
+    }
+    .content-box {
+        width: 500px;
+    }
+    .col-1-btn {
+        font-size: 20px;
+        padding: 24px 94px;
+    }
+    .abt-container {
+        margin-left: -20px;
+    }
    
+       
+     
 }
 
-@media (max-width:600px) {
+@media (max-width:576px) {
     .banner {
         margin-left: 20px;
     }
@@ -342,13 +627,40 @@ color: #000000;
         height: 200px;
         margin: 50px 50px;
     }
-}
-
-@media (max-width:512px) {
-    .row-2 {
+    .see-more-txt {
+        margin-left: 35px;
+    }
+    .see-more-txt a {
+        font-size: 15px;
+    }
+    .content-box {
+        width: 350px;
+    }
+    .col-1-btn {
+        font-size: 15px;
+        padding: 18px 90px;
+       
+    }
+    .f1 img {
+        display: none;
+    }
+    
+    .f2 {
+        margin-left: 20px;
+       
+    }
+    .f3-text {
+        font-size: 25px;
+    }
+    footer {
+        margin-top: 30px;
         margin-left: 10px;
+        font-size: 20px;
+
     }
 }
+
+
 
 
 
